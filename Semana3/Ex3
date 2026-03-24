@@ -1,0 +1,8 @@
+#Faça um algoritmo que leia o ano de nascimento de uma pessoa e verifique se ela pode ou não votar (desconsidere o mês de nascimento).
+
+ano = float(input("Digite o ano de seu nascimento: "))
+
+if ano <= 2010:
+    print ("Você pode votar")
+else:
+    print ("Você não pode votar")
