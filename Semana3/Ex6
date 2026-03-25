@@ -1,0 +1,8 @@
+#Leia um número fornecido pelo usuário. Se esse número for positivo, apresente o dobro do valor digitado. Se o número for negativo, mostre uma mensagem dizendo que o número é inválido.
+
+numero = float(input("Digite o número: "))
+
+if numero >= 0:
+    print(numero + numero)
+else:
+    print("Esse número é inválido")
