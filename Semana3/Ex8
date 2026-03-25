@@ -1,0 +1,8 @@
+#Peça o valor de uma compra. Se o valor for maior que R$100, aplique 10% de desconto. Senão, não aplique desconto.
+
+Valor = float(input("Digite o valor da compra: "))
+
+if Valor > 100.00:
+    print("R$", Valor * 0.90)
+else:
+    print("R$", Valor)
