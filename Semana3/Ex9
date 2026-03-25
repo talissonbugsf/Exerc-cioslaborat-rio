@@ -1,0 +1,27 @@
+#Uma loja está criando um sistema simples para calcular o valor final de uma compra. O programa deve:
+#Solicitar: Nome do cliente, Valor da compra, Forma de pagamento: "1" para dinheiro, "2" para cartão
+#Regras: Se o valor da compra for maior que R$200, Se o pagamento for em dinheiro: Aplicar 15% de desconto
+#Senão (cartão): Aplicar 5% de desconto, Senão (valor ≤ R$200): Se o pagamento for em dinheiro: Aplicar 10% de desconto, Senão (cartão):,Sem desconto
+#Exibir: Nome do cliente, Valor original, Valor final com desconto (se houver)
+
+Nome = str(input("Digite seu nome: "))
+Valor = float(input("Digite o valor da compra: "))
+Forma = float(input("Defina a forma de pagamento: "))
+
+if Forma == 1:
+    print("Sua forma de pagamento é dinheiro")
+    if Valor >= 200.00:
+        print(Valor * 0.85)
+    else:
+        print(Valor * 0.90)
+
+if Forma == 2:
+    print("Sua forma de pagamento é cartão")
+    if Valor >= 200.00:
+        print(Valor * 0.95)
+    else:
+        print(Valor)
+
+    print("Nome do cliente:", Nome)
+    print("Valor original:", Valor)
+    print("Valor final", Valor)
