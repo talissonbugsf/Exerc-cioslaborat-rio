@@ -1,0 +1,23 @@
+pontos = 0
+
+local = str(input("Você esteve no local do crime? ")).upper()
+vitima = str(input("Você conhece a vítima? ")).upper()
+desentendimento = str(input("Você já teve algum desentendimento com a vítima? ")).upper()
+proximo = str(input("Você estava próximo ao local na hora do ocorrido? ")).upper()
+inocencia = str(input("Você tem algo que comprove sua inocência? ")).upper()
+
+if local == "SIM":
+    pontos += 1
+if vitima == "SIM":
+    pontos += 1
+if desentendimento == "SIM":
+    pontos += 1
+if proximo == "SIM":
+    pontos += 1
+if inocencia == "SIM":
+   pontos += 1
+
+if pontos >= 3:
+    print("Indivíduo suspeito.")
+else:
+    print("Indivíduo não é suspeito.")
