@@ -6,8 +6,12 @@ while contador <= 4:
     
     if opcao == 1:
         print("Você selcionou a opção: Realizar venda")
+        venda = float(input("Digite o valor da venda: R$ "))
+        caixa_atual = caixa_atual + venda
     elif opcao == 2:
         print("Você selecionou a opção: Retirar dinheiro")
+        retirar = float(input("Digite quanto você quer retirar: R$ "))
+        caixa_atual = caixa_atual - retirar
     elif opcao == 3:
         print("Você selecionou a opção: Dinheiro em caixa")
         print("Seu caixa atual é:", caixa_atual)
