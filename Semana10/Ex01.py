@@ -1,5 +1,6 @@
 valor = []
 maior_30 = 0
+soma_30 = 0
 soma = 0
 
 for v in range (0,8):
@@ -8,9 +9,11 @@ for v in range (0,8):
     soma = soma + valor[v]
 
     if valores >= 30:
-        maior_30 = maior_30 + valor[v]
+        soma_30 = soma_30 + valor[v]
+        maior_30 += 1
     else:
         pass
 
-print("Soma dos números maiores que 30:", maior_30)
+print("Números maiores que 30:", maior_30)
+print("Soma dos números maiores que 30:", soma_30)
 print("Soma de todos os números:", soma)
