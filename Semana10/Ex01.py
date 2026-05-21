@@ -13,6 +13,9 @@ for v in range (0,8):
         maior_30 += 1
     else:
         pass
+        
+for v in range (len(valor)):
+    print("-", valor[v])
 
 print("Números maiores que 30:", maior_30)
 print("Soma dos números maiores que 30:", soma_30)
