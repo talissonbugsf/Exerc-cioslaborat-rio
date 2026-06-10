@@ -9,7 +9,7 @@ def fazenda():
         proB = int(input("Prdoução da fazenda B:"))
         B.append(proB)
 
-    return A, B, v
+    return A, B
 
 def soma_fazenda(A, B):
     soma = []
@@ -21,7 +21,7 @@ def soma_fazenda(A, B):
     return soma
 
 def main():
-    A, B, v = fazenda()
+    A, B = fazenda()
     resultado = soma_fazenda(A, B)
 
     print("Produção por lote:")
